@@ -190,6 +190,8 @@ div.more{
     position: relative;
     top: 100vh;
     height: 100vh;
+    padding: 1em;
+    overflow-y: scroll;
     z-index: 5;
     background-color: #1f1f1f;
 
@@ -206,4 +208,9 @@ div.more div {
 }
 div.more p {
     font-family: 'Montserrat', sans-serif;
+}
+
+.footertext{
+    color: #b9b9b9;
+    margin-top: 0.5em;
 }
