@@ -118,6 +118,7 @@ h3{
     flex: 1;
     cursor: pointer;
     overflow: hidden;
+    min-width: 10em;
 }
 
 .btn:hover{
