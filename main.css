@@ -69,7 +69,7 @@ body{
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 4.9rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
@@ -95,12 +95,18 @@ h3{
     gap: 1em;
 }
 
-@media (max-width: 530px) {
+@media screen and (max-width: 530px) {
     .btns-container{
         /* grid-template-columns: 1fr; */
     }
     .btn{
         height: 3em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1{
+        font-size: 3.5rem;
     }
 }
 
@@ -119,7 +125,7 @@ h3{
     flex: 1;
     cursor: pointer;
     overflow: hidden;
-    /* min-width: 10em; */
+    min-width: fit-content;
 }
 
 .btn:hover{
@@ -155,6 +161,10 @@ h3{
 }
 .btn.steam::before{
     background-image: url("./icons/steam.svg");
+}
+.btn.itch::before{
+    background-image: url("./icons/itch.svg");
+    background-size: 75% !important;
 }
 .btn.more::before{
     background-image: url("./icons/arrow.svg");
