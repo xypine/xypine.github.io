@@ -198,21 +198,24 @@ h3{
     content: none !important;
 }
 
+.filler-top{
+    height: 100vh;
+}
+
 div.more{
     position: relative;
-    top: 100vh;
     height: 100vh;
     padding: 1em;
-    overflow-y: scroll;
     z-index: 5;
     background-color: #1f1f1f;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 1em;
-    gap: 1em;
+    gap: 2em;
 }
 div.more div {
     width: 500px;
@@ -220,6 +223,21 @@ div.more div {
 }
 div.more p {
     font-family: 'Montserrat', sans-serif;
+}
+.more-content {
+    border-right: solid 2px gray;
+    border-top: solid 2px gray;
+    padding: .5em;
+}
+
+div.footer{
+    position: relative;
+    height: 100px;
+    background-color: #2b2b2b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footertext{
