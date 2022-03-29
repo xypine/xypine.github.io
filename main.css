@@ -13,6 +13,7 @@ html{
     background-color: #1f1f1f;
     color: whitesmoke;
     scroll-behavior: smooth;
+    font-size: calc(16px * 10vh);
 }
 
 a{
@@ -52,8 +53,6 @@ body{
 }
 
 .center{
-    position: fixed;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,7 +60,7 @@ body{
 
     padding: 0 1em;
     width: calc(100% - 2em);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .content{
@@ -116,6 +115,7 @@ h3{
     color: var(--accent-2);
     border: 2px solid var(--accent-1);
     padding: .2em 2.1em;
+    padding-left: calc(2.1em + 10px);
     border-radius: 999px;
     font-size: 100%;
     font-weight: 700;
@@ -198,13 +198,16 @@ h3{
     content: none !important;
 }
 
-.filler-top{
-    height: 100vh;
+div.more {
+    flex-direction: column;
+    align-items: normal;
+    padding: 0;
+    width: unset;
 }
 
-div.more{
-    position: relative;
-    height: 100vh;
+div.more-content{
+    flex: 1;
+
     padding: 1em;
     z-index: 5;
     background-color: #1f1f1f;
@@ -214,26 +217,27 @@ div.more{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 1em;
     gap: 2em;
 }
-div.more div {
-    width: 500px;
+div.more-content div {
+    min-width: 200px;
     max-width: 100%;
 }
-div.more p {
+div.more-content p {
     font-family: 'Montserrat', sans-serif;
 }
-.more-content {
-    border-right: solid 2px gray;
-    border-top: solid 2px gray;
-    padding: .5em;
+.more-content-border {
+    background-color: #191919;
+    padding: 1em;
+    border-radius: .5em;
+    border: 1px solid #2d2d2d;
 }
 
 div.footer{
     position: relative;
     height: 100px;
     background-color: #2b2b2b;
+    padding-inline: 2em;
 
     display: flex;
     justify-content: center;
