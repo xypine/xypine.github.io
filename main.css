@@ -9,32 +9,32 @@ Import fonts
     background: transparent;
 }
 
-html{
+html {
     background-color: #1f1f1f;
     color: whitesmoke;
     scroll-behavior: smooth;
     font-size: calc(16px * 10vh);
 }
 
-a{
+a:not(.btn) {
     color: #9e9dff;
 }
 
-a:visited{
+a:not(.btn):visited {
     color: #d0adf0;
 }
-a:active{
+a:not(.btn):active, a:not(.btn):hover {
     color: #fe9d9e;
 }
 
-html, body{
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-body::after{
+body::after {
     content: " ";
     background-image: url("img/noise2.png");
     position: fixed;
@@ -48,11 +48,11 @@ body::after{
     top: 0;
     left: 0;
 }
-body{
+body {
     /* display: flex; */
 }
 
-.center{
+.center {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,31 +63,31 @@ body{
     min-height: 100vh;
 }
 
-.content{
+.content {
     max-width: 100%;
 }
 
-h1{
+h1 {
     font-size: 4.9rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
     line-height: 1;
 }
-h2{
+h2 {
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
 }
-h3{
+h3 {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: white;
 }
 
-.buttons-container{
+.buttons-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -109,7 +109,7 @@ h3{
     }
 }
 
-.btn{
+.btn {
     --accent-1: #b1b1b1;
     --accent-2: skyblue;
     color: var(--accent-2);
@@ -128,13 +128,22 @@ h3{
     min-width: fit-content;
 }
 
-.btn:hover{
+a.btn {
+    display: flex;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn:hover {
     background: var(--accent-2);
     color: white;
     border: 2px solid var(--accent-2);
 }
 
-.btn::before{
+.btn::before {
     content: " ";
     transition: all .3s;
     width: 2em;
@@ -151,29 +160,29 @@ h3{
     background-size: cover !important;
     background-position: 50% !important;
 }
-.btn:hover::before{
+.btn:hover::before {
     background-color: var(--accent-2);
     border: 1px solid var(--accent-2);
 }
 
-.btn.github::before{
+.btn.github::before {
     background-image: url("./icons/github.svg");
 }
-.btn.steam::before{
+.btn.steam::before {
     background-image: url("./icons/steam.svg");
 }
-.btn.itch::before{
+.btn.itch::before {
     background-image: url("./icons/itch.svg");
     background-size: 75% !important;
 }
-.btn.more::before{
+.btn.more::before {
     background-image: url("./icons/arrow.svg");
 }
-.btn.app::before{
+.btn.app::before {
     background-image: url("./icons/arrow-forward.svg");
 }
 
-.btn::after{
+.btn::after {
     content: " ";
     transition: all .3s;
     width: 2em;
@@ -191,10 +200,10 @@ h3{
     background-image: url("./icons/open-in-new.png");
     background-position: 50% !important;
 }
-.btn:hover::after{
+.btn:hover::after {
     right: -1px;
 }
-.btn.internal::after{
+.btn.internal::after {
     content: none !important;
 }
 
@@ -205,7 +214,7 @@ div.more {
     width: unset;
 }
 
-div.more-content{
+div.more-content {
     flex: 1;
 
     padding: 1em;
@@ -233,7 +242,7 @@ div.more-content p {
     border: 1px solid #2d2d2d;
 }
 
-div.footer{
+div.footer {
     position: relative;
     height: 100px;
     background-color: #2b2b2b;
@@ -244,7 +253,7 @@ div.footer{
     align-items: center;
 }
 
-.footertext{
+.footertext {
     color: #b9b9b9;
     margin-top: 0.5em;
 }
