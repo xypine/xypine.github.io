@@ -87,6 +87,13 @@ h3 {
     color: white;
 }
 
+.subtitle {
+    margin: .5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    max-width: 58em;
+}
+
 .buttons-container {
     display: flex;
     justify-content: space-evenly;
