@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-baa31df6.js",
+    "file": "start-2e2ee6c8.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-6d9ba400.js"
+      "_index-ebeff514.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -15,66 +15,66 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-d4b80f66.js",
+    "file": "pages/__layout.svelte-980cf8ec.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-6d9ba400.js"
+      "_index-ebeff514.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-46010285.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-ea96020b.js",
+    "file": "error.svelte-f88670f9.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-6d9ba400.js"
+      "_index-ebeff514.js"
     ]
   },
   "src/routes/en.svelte": {
-    "file": "pages/en.svelte-8e4b7167.js",
+    "file": "pages/en.svelte-d6491c11.js",
     "src": "src/routes/en.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-6d9ba400.js",
-      "_content-3716e577.js"
+      "_index-ebeff514.js",
+      "_content-82de0598.js"
     ]
   },
   "src/routes/fi.svelte": {
-    "file": "pages/fi.svelte-b96b3a39.js",
+    "file": "pages/fi.svelte-9d5a6872.js",
     "src": "src/routes/fi.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-6d9ba400.js",
-      "_content-3716e577.js"
+      "_index-ebeff514.js",
+      "_content-82de0598.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-58eac88c.js",
+    "file": "pages/index.svelte-60d8c261.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-6d9ba400.js",
-      "_content-3716e577.js"
+      "_index-ebeff514.js",
+      "_content-82de0598.js"
     ]
   },
-  "_index-6d9ba400.js": {
-    "file": "chunks/index-6d9ba400.js"
+  "_index-ebeff514.js": {
+    "file": "chunks/index-ebeff514.js"
   },
-  "_content-3716e577.js": {
-    "file": "chunks/content-3716e577.js",
+  "_content-82de0598.js": {
+    "file": "chunks/content-82de0598.js",
     "imports": [
-      "_index-6d9ba400.js"
+      "_index-ebeff514.js"
     ],
     "css": [
-      "assets/content-b5a81326.css"
+      "assets/content-fd749c36.css"
     ]
   }
 }
